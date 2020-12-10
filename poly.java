@@ -56,60 +56,39 @@ NOTE that this is a code snippet and not a complete java program; hence, you do 
 
 var1.method2();
 //answer:
+      Mammal 2
 
 var2.method2();
 //answer:
-
+      Horse 2
 var3.method2();
 //answer:
-
+      Ponny 2
+      Mammal 2
 var4.method2();
 //answer:
-
+      Horse 2
 var5.method2();
 //answer:
+      error
 
 var6.method2();
 //answer:
-
+      Creature 2
 var1.method3();
 //answer:
-
+      Mammal 2
+      Mammal 3
 var2.method3();
 //answer:
+      error
 
 var3.method3();
 //answer:
-
+      Ponny 2
+      Mammal 2
+      Mammal 3
 var4.method3();
 //answer:
-
-((Ponny) var1).method1();
-//answer:
-
-((Horse) var2).method1();
-//answer:
-
-((Ponny) var3).method1();
-//answer:
-
-((Ponny) var4).method1();
-//answer:
-
-((Horse) var4).method2();
-//answer:
-
-((Mammal) var5).method2();
-//answer:
-
-((Creature) var5).method3();
-//answer:
-
-((Horse) var2).method3();
-//answer:
-
-((Ponny) var3).method3();
-//answer:
-
-((Ponny) var5).method3();
-//answer:
+      Horse 2
+      Mammal 3
