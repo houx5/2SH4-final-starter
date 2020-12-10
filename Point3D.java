@@ -29,3 +29,52 @@ Some of the existing behaviors from Point should behave differently on Point3D o
 Write your class below:
 
 */
+public class Point {
+    int x;
+    int y;
+    public Point(int a, int b){
+        x = a;
+        y = b;
+    }
+    public void Set(int a, int b){
+        x = a;
+        y = b;
+    }
+
+}
+public class Point3D extends Point{
+    int z;
+
+    public Point3D(int a,int b,int c) {
+        super(a, b);
+        z = c;
+    }
+    public Point3D(){
+        super(0, 0);
+        z = 0;
+    }
+    public void setLocation(int x, int y, int z){
+        super.Set(x,y);
+        this.z = z;
+    }
+    public int getZ(){
+        return this.z;
+    }
+    public Point3D(int a,int b) {
+        super(a, b);
+        z = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "("+this.x+","+this.y +","+this.z +")";
+    }
+
+    public double Getd(){
+        int t = this.x*this.x + this.y*this.y + this.z*this.z;
+        return Math.pow(t,0.5);
+    }
+
+
+
+}
