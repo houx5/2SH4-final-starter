@@ -6,7 +6,11 @@ The question has four parts, answer all of them in this same file*/
  
 /*(a) [5 Marks] write structure Node that holds an integer value as well as a pointer to the next node*/
 //Answer:
-
+typedef struct node
+{
+    int data;
+    struct node *next;
+}Node;
 
 
 
@@ -15,7 +19,10 @@ The question has four parts, answer all of them in this same file*/
 
 /*(b) [5 Marks] Write structure SLL that represents the singly linked list and holds a pointer to the first node in the list.*/
 //Answer:
-
+typedef struct SList
+{
+    Node pHead;
+}SList;
 
 
 
@@ -28,7 +35,17 @@ returns:
 1 if the target was found in the list
 0, otherwise*/
 //Answer:
+int searchList(SList* L, int target){
+    Node* pCur = L->pHead;
+    while (pCur) {
+        if(pCur->data = target){
+            return 1;
+        }
+        pCur = pCur->next;
+    }
+    return 0;
 
+}
 
 
 
@@ -39,7 +56,24 @@ the correctness of the returned value from the function by comparing it against 
 
 
 int main(){
-	
+    SList *head;
+    head = NULL;
+    int i = 0;
+
+    SList node *p= head;
+    for(i = 0; i< 10;i++){
+
+        q=(struct node*)malloc(sizeof(struct node))
+        q->data = i;
+        q->next = NULL;
+        p->next = q;
+        p = p->next;
+
+    }
+    int a;
+    a = searchList(head,5);
+
+    printf('%d',a);	
 	
 	
 	
